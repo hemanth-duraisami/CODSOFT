@@ -1,25 +1,4 @@
-"""
-Rule-Based Chatbot
-
-A simple, beginner-friendly console-based chatbot implemented in Python.
-This program uses predefined rules and if-elif-else structures to handle user queries.
-No external libraries are required.
-"""
-
-
-
-
 def get_response(user_input: str) -> str:
-    """
-    Determines the chatbot's response based on the user's input.
-    Matches are case-insensitive and utilize basic pattern matching with 'if-elif-else'.
-    
-    Args:
-        user_input (str): The raw string entered by the user.
-
-    Returns:
-        str: The chatbot's response.
-    """
     cleaned_input = user_input.lower().strip()
 
     punctuation = ".,!?;:"
